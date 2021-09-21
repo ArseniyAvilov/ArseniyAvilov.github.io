@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>My awesome resume</title>
+    <meta name="description" content="Avilov Arseniy awesome resume">
+    <meta name="author" content="Avilov Arseniy">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+      (function() {
+        document.addEventListener('DOMContentLoaded', function(){ 
+          const button = window.document.querySelector('.actions__download-btn');
+          button.onclick = function() {
+            const  source = window.document.querySelector('.resume-page');
+            html2pdf(source);
+          };
+        }, false);
+      })();
+    </script>
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="logo">
+          <a href="/" class="logo__text">CV Super Builder</a>
+        </div>
+        <div class="actions">
+          <button class="actions__download-btn">Download PDF</button>
+        </div>
+      </div>   
+    </header>
+    <main class="resume-container">
+      <div class="resume-page">
+        <div  class="resume-page__content">
+          <div class="img-mane">
+          <div class="img">
+            <img src="/images/profile.jpg" width="70" height="70">
+          </div>
+          <div class="name-pos">
+            <a class="name">Avilov Arseniy</a>
+            <a class="position">Machine learning engineer</a>
+          </div>
+        </div>
+          <div class="contacts">arseniy1099@gmail.com +79514920800</div>
+        </div>
+        <a class="about">In love with computer vision tasks and deep learning world, machine learning engineer in search of interesting projects and a company ready to shelter.</a>
+        <div class="resume-page__content"> 
+          <div class="first-column">
+          <div class="education">
+            <div class="ed-name">EDUCATION</div>
+            <div class="bach-name"><b>Bachelor of Applied mathematics and informatics</b>, South Federal University, Rostov-on-Don, Russia, GPA: 3.5</div>
+            <div class="bach-course">Selected Coursework: Calculus, Probability and Statistic, Numerical Methods, Method of Optimizations, Computer Systems (C and Unix), Graphs Alghoritms</div>
+            <div class="bach-years1">Jun 2017 - Jan 2021</div>
+            <div class="bach-name"><b>Master of Fundamental informatics and information technology</b>, South Federal University, Rostov-on-Don, Russia</div>
+            <div class="bach-course">Selected Coursework: Computer vision, Machine learning, Game design, Cross platform programming</div>
+            <div class="bach-years">Jun 2021 - Jan 2023</div>
+          </div>
+          <div class="internship">
+            <div class="intern-name">INTERNSHIP EXPERIENCE</div>
+            <div class="intern-position">Data science intern at Sberbank, </div>
+            <div class="intern-task">— Created anomaly detection machine learning system</div>
+            <div class="intern-task">— Analazing investment statistics</div>
+
+            <div class="intern-position">Research engineer in video analitics laboratory at Sfedu, </div>
+            <div class="intern-task">— Created segmentation model of car and pedestrian on road</div>
+            <div class="intern-task">— Created algorithm of 3d reconstruction road map</div>
+          </div>
+          </div>
+          <div class="second-column">
+          <div class="skills">
+            <div class="sk-name">SKILLS</div>
+            <div class="resume-page__content">
+            <div class="sk-column">Python Pytorch Sklearn OpenCV</div>
+            <div class="sk-column">Docker Rust C++ Linux</div>
+          </div>
+          </div>
+          <div class="languages">
+            <div class="lang-name">LANGUAGES</div>
+            <div class="lang-frst-column">Russian(mother tongue) English(upper intermediate) Chinese(intermediate)</div>
+          </div>
+          </div>
+        </div>
+        <div class="head-soc">
+          <ul class="list">
+          <li class="git"><a href="https://github.com/ArseniyAvilov"><img src="/images/git.png" width="20" height="20"></a> </li>
+          <li class="li"><a href="https://www.linkedin.com/mwlite/in/arseniy-avilov-92873b187"><img src="/images/lin.png" width="20" height="20"></a></li>
+          </ul>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
